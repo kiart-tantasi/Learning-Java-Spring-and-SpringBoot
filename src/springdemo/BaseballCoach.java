@@ -1,6 +1,8 @@
 package springdemo;
 
-public class BaseballCoach implements Coach {
+import org.springframework.beans.factory.DisposableBean;
+
+public class BaseballCoach implements Coach, DisposableBean {
 
     private FortuneService fortuneService;
 
@@ -17,6 +19,17 @@ public class BaseballCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+    public void thisIsInitialMethod() {
+        System.out.println("initiating bean...");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("destroying bean...");
+    }
+
+
 
 
 }
