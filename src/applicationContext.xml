@@ -18,7 +18,10 @@
 
     <!-- main bean -->
     <bean id="myCoach"
-          class="springdemo.BaseballCoach">
+          class="springdemo.BaseballCoach"
+          init-method="thisIsInitialMethod"
+    >
+    <!-- destroy method will be automatically added. -->
 
         <!-- 1. constructor injection -->
         <constructor-arg ref="myFortune" />

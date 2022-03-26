@@ -29,7 +29,4 @@ public class BaseballCoach implements Coach, DisposableBean {
         System.out.println("destroying bean...");
     }
 
-
-
-
 }
