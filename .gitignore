@@ -1,16 +1,18 @@
 .idea
 
-dependency-injection/.idea
-dependency-injection/lib
-dependency-injection/out
-dependency-injection/dependency-injection.iml
+dependency-injection-xml/.idea
+dependency-injection-xml/lib
+dependency-injection-xml/out
+dependency-injection-xml/dependency-injection.iml
 
-learning-java-annotation/.idea
-learning-java-annotation/lib
-learning-java-annotation/out
-learning-java-annotation/learning-java-annotation.iml
+dependency-injection-annotation/.idea
+dependency-injection-annotation/lib
+dependency-injection-annotation/out
+dependency-injection-annotation/learning-java-annotation.iml
 
-spring-source-code-config/.idea
-spring-source-code-config/lib
-spring-source-code-config/out
-spring-source-code-config/spring-source-code-config.iml
+dependency-injection-java-code/.idea
+dependency-injection-java-code/lib
+dependency-injection-java-code/out
+dependency-injection-java-code/spring-source-code-config.iml
+
+spring-boot-one
