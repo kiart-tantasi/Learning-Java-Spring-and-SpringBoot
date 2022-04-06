@@ -1,14 +1,21 @@
-package springdemo;
+package springdemo.coach;
 
 import org.springframework.beans.factory.DisposableBean;
+import springdemo.service.FortuneService;
 
 public class BaseballCoach implements Coach, DisposableBean {
 
     private FortuneService fortuneService;
 
+    // 1. constructor injection
     public BaseballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+
+    // 2. setter injection
+//    public void setFortuneService(FortuneService fortuneService) {
+//        this.fortuneService = fortuneService;
+//    }
 
     @Override
     public void getWorkout() {

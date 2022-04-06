@@ -14,12 +14,12 @@
 
     <!--    dependency-->
     <bean id="myFortune"
-          class="springdemo.MoneyFortuneService">
+          class="springdemo.service.MoneyFortuneService">
     </bean>
 
     <!-- main bean -->
     <bean id="myCoach"
-          class="springdemo.SetterCoach">
+          class="springdemo.coach.SetterCoach">
         <!-- setter injection-->
         <property name="fortuneService" ref="myFortune" />
 

@@ -1,8 +1,9 @@
-package springdemo;
+package springdemo.person;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import springdemo.service.ActivityService;
 
 @Component
 public class FunnyPerson implements Person {

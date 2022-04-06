@@ -9,6 +9,8 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import java.util.LinkedList;
 import java.util.List;
 
+// *** To Destroy Prototype Bean ***
+
 public class MyCustomProcessor
         implements
         BeanPostProcessor,

@@ -1,4 +1,4 @@
-package springdemo;
+package springdemo.service;
 
 import java.util.Random;
 

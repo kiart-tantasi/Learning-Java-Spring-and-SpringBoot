@@ -1,4 +1,4 @@
-package springdemo;
+package springdemo.service;
 
 public class MoneyFortuneService implements FortuneService {
     @Override

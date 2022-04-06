@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 import java.util.LinkedList;
 import java.util.List;
 
+// This is for prototype scope's bean destroying.
+
 @Component
 public class CustomBeanProcessor implements BeanPostProcessor, BeanFactoryAware, DisposableBean {
 

@@ -13,15 +13,16 @@
     <!-- Define your beans here -->
     <!--    dependency-->
     <bean id="myFortune"
-          class="springdemo.RandomFortuneService">
+          class="springdemo.service.RandomFortuneService">
     </bean>
 
     <!-- main bean -->
     <bean id="myCoach"
-          class="springdemo.LiteralValuesCoach">
+          class="springdemo.coach.LiteralValuesCoach">
         <!--        Literal Values-->
                 <property name="name" value="${dummy.name}" />
                 <property name="email" value="${dummy.email}" />
+                <property name="something" value="${dummy.something}" />
     </bean>
 
 </beans>

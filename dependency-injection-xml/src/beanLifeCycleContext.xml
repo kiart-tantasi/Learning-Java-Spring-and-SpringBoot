@@ -11,16 +11,17 @@
     <context:property-placeholder location="classpath:dummy.properties"/>
 
     <!-- Define your beans here -->
-    <bean id="fortuneService" class="springdemo.RandomFortuneService" />
+    <bean id="fortuneService" class="springdemo.service.RandomFortuneService" />
 
     <bean id="coach"
-          class="springdemo.BaseballCoach"
+          class="springdemo.coach.BaseballCoach"
           init-method="thisIsInitialMethod"
           scope="prototype"
     >
         <constructor-arg ref="fortuneService" />
     </bean>
 
+    <!-- Scope prototype needs this custom processor to destroy the bean. -->
     <bean id="customProcessor" class="springdemo.MyCustomProcessor"/>
 
 

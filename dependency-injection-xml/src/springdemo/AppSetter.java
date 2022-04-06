@@ -1,13 +1,14 @@
 package springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springdemo.coach.Coach;
 
 public class AppSetter {
     public static void main(String[] args) {
 
 //        load config file (.xml)
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("setterContext.xml");
+        ClassPathXmlApplicationContext context
+                = new ClassPathXmlApplicationContext("setterContext.xml");
 
 //        get bean from spring container
         Coach theCoach = context.getBean("myCoach", Coach.class);

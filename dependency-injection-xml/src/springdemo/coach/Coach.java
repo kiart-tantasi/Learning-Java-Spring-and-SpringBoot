@@ -1,4 +1,4 @@
-package springdemo;
+package springdemo.coach;
 
 public interface Coach {
     public void getWorkout();
